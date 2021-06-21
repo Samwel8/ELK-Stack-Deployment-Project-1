@@ -112,8 +112,8 @@ Filebeat is a lightweight shipper for forwarding and centralizing log data. File
 
 Metricbeat collects metrics from the operating system and from services running on the server. Metricbeat then takes the metrics and statistics that it collects and ships them to the output that you specify.
 
-![filebeat logs](./Images/filebeat-kibana.png)
-![metricbeat](./Images/metrics.png)
+![filebeat logs](./Images/filebeat-kibana.PNG)
+![metricbeat](./Images/metrics.PNG)
 
 ### Using the Playbook
 
@@ -126,21 +126,21 @@ SSH into the control node and follow the steps below:
 - Update the hosts config file to include the Priviate IP of the ELK server To the Elasticsearch and Kibana sections of the config file.
 
 - Run the playbook, and navigate to ELK serves IP:5601/app/kibana to check that the installation worked as expected
-![ELK server GUI](./images/filebeat-kibana-syslogs.png)
+![ELK server GUI](./images/filebeat-kibana-syslogs.PNG)
 
 - Which file is the playbook? Where do you copy it?
 Elk-playbook.yml, goes to /etc/ansible
 - Which file do you update to make Ansible run the playbook on a specific machine?
 The /etc/ansible/hosts.cfg this is where you add the IP address of the machines you want it installed on.
 [hosts.cfg](./Ansible-hosts/hosts)
-![hosts-image](./Images/hosts.png)
+![hosts-image](./Images/hosts.PNG)
 
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 In the etc/ansible/hosts file you can specify by uncommenting header "#" what servers to install it on. Example webserves elkserver.
 
 - Which URL do you navigate to in order to check that the ELK server is running?
  [Kibana](http://20.96.184.149:5601/app/kibana)
- ![ELK server GUI](./images/filebeat-kibana.png)
+ ![ELK server GUI](./images/filebeat-kibana.PNG)
 
 - As a *Bonus*, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 Commands used to install ELK, filebeat and metricbeat
@@ -155,7 +155,7 @@ While in ansible container as root Updates hosts file <root@92ea25d597c2:~# nano
 create elk-playbook.yml configure elk vm
 Run root@92ea25d597c2:/etc/ansible# ansible-playbook elk-playbook.yml
 Run ssh sysadmin@10.1.0.4 and check if container is running
-![elk server docker ps](./Images/elk_server_ps.png)
+![elk server docker ps](./Images/elk_server_ps.PNG)
 
 1. Installing Filebeat on the DVWA Container
 First, make sure that our ELK server container is up and running.
