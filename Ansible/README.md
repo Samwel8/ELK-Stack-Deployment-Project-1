@@ -126,7 +126,7 @@ SSH into the control node and follow the steps below:
 - Update the hosts config file to include the Priviate IP of the ELK server To the Elasticsearch and Kibana sections of the config file.
 
 - Run the playbook, and navigate to ELK serves IP:5601/app/kibana to check that the installation worked as expected
-![ELK server GUI](./images/filebeat-kibana-syslogs.PNG)
+![ELK server GUI](./Images/filebeat-kibana-syslogs.PNG)
 
 - Which file is the playbook? Where do you copy it?
 Elk-playbook.yml, goes to /etc/ansible
