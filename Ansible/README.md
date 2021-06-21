@@ -256,6 +256,6 @@ Run the metricbeat setup command.
 Run the metricbeat -e command.
 
 Enable the Metricbeat service on boot.
-![metricbeat](./Images/docker_metrics.png)
+![metricbeat](./Images/docker_metrics.PNG)
 
 To verify that your play works as expected, on the Metricbeat installation page in the ELK server GUI, scroll to Step 5: Module Status and click Check Data.
